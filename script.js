@@ -10,7 +10,7 @@ const profiles = {
     extra: ["/assets/thu1.jpg", "/assets/thu2.jpg", "/assets/thu3.jpg"]
   },
   "Hà Nhi": {
-    img: "./assets/nhi1.jpg",
+    img: "./assets/img2.jpg",
     wish: "Chúc Nhi sinh nhật vui vẻ, luôn mạnh khỏe và hạnh phúc nhé. Mong rằng bạn sẽ luôn giữ được sức khỏe dồi dào, trái tim bình yên và tinh thần vui vẻ mỗi ngày. Hạnh phúc không phải là những điều to tát, mà chính là những phút giây bạn được sống là chính mình, được yêu thương và được làm điều mình thích. Chúc bạn một tuổi mới thật trọn vẹn và ý nghĩa 🎂",
     extra: ["/assets/nhi1.jpg", "/assets/nhi2.jpg", "/assets/nhi3.jpg"]
   }
