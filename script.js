@@ -1,18 +1,18 @@
 const profiles = {
   "Ngọc Thảo": {
-    img: "./assets/img2.jpg",
+    img: "/assets/img2.jpg",
     wish: "Chúc mừng sinh nhật bạn Thảo! Tuổi mới đến rồi, mong bạn luôn giữ được trái tim đầy yêu thương, sự dịu dàng trong cách sống và niềm tin vững chắc vào những điều tốt đẹp. Cuộc sống có thể không phải lúc nào cũng như mong đợi, nhưng mong rằng bạn luôn đủ mạnh mẽ để mỉm cười, đủ dũng cảm để đi tiếp và đủ ấm áp để yêu thương chính mình và mọi người. Mỗi ngày trôi qua, hãy sống chậm một chút, trân trọng bản thân nhiều hơn, vì bạn xứng đáng với những điều đẹp đẽ nhất 🎂",
-    extra: ["./assets/thao1.jpg", "./assets/thao2.jpg", "./assets/thao3.jpg"]
+    extra: ["/assets/thao1.jpg", "/assets/thao2.jpg", "/assets/thao3.jpg"]
   },
   "Xuân Thư": {
-    img: "./assets/img2.jpg",
+    img: "/assets/img2.jpg",
     wish: "Chúc Thư có một sinh nhật ngọt ngào, luôn xinh đẹp và thành công. Mong bạn luôn được là chính mình trong phiên bản rực rỡ nhất: vui vẻ, sáng tạo, không ngừng thay đổi để phát triển – nhưng cũng đừng quên tận hưởng từng khoảnh khắc giản dị xung quanh. Chúc bạn một tuổi mới ‘bùng nổ’ năng lượng và thành công 🎂",
-    extra: ["./assets/thu1.jpg", "./assets/thu2.jpg", "./assets/thu3.jpg"]
+    extra: ["/assets/thu1.jpg", "/assets/thu2.jpg", "/assets/thu3.jpg"]
   },
   "Hà Nhi": {
     img: "./assets/nhi1.jpg",
     wish: "Chúc Nhi sinh nhật vui vẻ, luôn mạnh khỏe và hạnh phúc nhé. Mong rằng bạn sẽ luôn giữ được sức khỏe dồi dào, trái tim bình yên và tinh thần vui vẻ mỗi ngày. Hạnh phúc không phải là những điều to tát, mà chính là những phút giây bạn được sống là chính mình, được yêu thương và được làm điều mình thích. Chúc bạn một tuổi mới thật trọn vẹn và ý nghĩa 🎂",
-    extra: ["./assets/nhi1.jpg", "./assets/nhi2.jpg", "./assets/nhi3.jpg"]
+    extra: ["/assets/nhi1.jpg", "/assets/nhi2.jpg", "/assets/nhi3.jpg"]
   }
 };
 
