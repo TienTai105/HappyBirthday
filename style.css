@@ -1,0 +1,206 @@
+/* Ngăn lỗi lệch lề do hiệu ứng */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+  overflow-x: hidden; /* Ngăn cuộn ngang */
+  width: 100vw;
+}
+
+/* Container chính */
+.container {
+  position: relative;
+  top: 10vh;
+  z-index: 2;
+}
+
+/* Tiêu đề chữ neon */
+.neon-text {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Dòng chúc mừng */
+.wish {
+   font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+/* Ảnh */
+.profile-img, .extra-img {
+  margin: 1rem;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover, .extra-img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* Input và button */
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff4081;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hiệu ứng chữ */
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ff0080; }
+  to { text-shadow: 0 0 20px #ff0080, 0 0 30px #ff0080; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Trái tim pop */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  animation: popHeart 0.8s ease forwards;
+  z-index: 999;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before { top: -10px; left: 0; }
+.heart::after { left: -10px; top: 0; }
+
+@keyframes popHeart {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(3); }
+}
+
+/* Bong bóng nổi */
+#bubbles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-100vh) scale(1.5); }
+}
+
+/* Sao băng */
+.shooting-star {
+  position: fixed;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(white, transparent);
+  top: -100px;
+  left: 50vw;
+  transform: rotate(45deg);
+  animation: shoot 1s linear infinite;
+  z-index: 0;
+}
+
+@keyframes shoot {
+  0% { transform: translate(0, 0) rotate(45deg); opacity: 1; }
+  100% { transform: translate(500px, 500px) rotate(45deg); opacity: 0; }
+}
+
+/* Trái tim bay lên */
+.heart-float {
+  position: fixed;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: floatUp 4s ease-out forwards;
+  opacity: 1; /* ← Tăng độ rõ */
+  z-index: 9999; /* ← Nổi trên cùng */
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.8); /* ánh sáng mờ đẹp */
+}
+
+/* Tạo hình trái tim bằng cách dùng pseudo-elements */
+.heart-float::before,
+.heart-float::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart-float::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart-float::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+html {
+  overflow-y:  hidden; /* Luôn hiển thị thanh cuộn dọc */
+}

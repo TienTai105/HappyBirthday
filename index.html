@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div id="bubbles"></div>
+  <div class="container">
+    <h1 class="neon-text"></h1>
+    <input type="text" id="nameInput" placeholder="Nhập tên người nhận...">
+    <button onclick="setName()">Gửi lời chúc</button>
+    <div id="mainContent" style="display:none;">
+      <img id="profileImg" src="" alt="Ảnh người nhận" class="profile-img">
+      <div id="extraImages"></div>
+      <p id="personalWish" class="wish"></p>
+      <audio id="birthdayMusic" >
+        <source src="assets/HPBD2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
